@@ -2,7 +2,7 @@
 #Create Appetizer_table
 class CreateAppetizer <ActiveRecord::Migration
   def change
-    create table (:APPETIZER, id false do |t| #do not generate defult key
+    create table (:APPETIZER, id false) do |t| #do not generate defult key
       t.column :APPTZR_ID, string             #primery key, Appetizer_ID
       t.column :APPTZR_NAME, string, limit :60
       t.column :APPTZR_INGREDIENT_DESCPTN, string, limit :160
