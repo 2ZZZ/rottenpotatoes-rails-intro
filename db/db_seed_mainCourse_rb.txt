@@ -1,0 +1,50 @@
+## db/seeds.rb 
+##MAIN_COURSE data
+## MAIN_COURSE TABLE: MEAL_ID, MAIN_COURSE_NAME,INGREDIENT_DESCRIPTION
+
+MAIN_COURSE = [{:MEAL_ID => '401', :MAIN_CRSE_NAME => 'GRILLED_MEAT', :MAIN_CRSE_INGREDIENT_DESCPTN => 'MEAT OF YOUR CHOICES'},
+              {:MEAL_ID => '402', :MAIN_CRSE_NAME => 'PAD_THAI', :MAIN_CRSE_INGREDIENT_DESCPTN => 'STIR_FRY_NOODLE,CHOICED OF MEAT,
+                                                                                                     TOFU,GREEN ONION, BEAN SPROUTS'},
+              {:MEAL_ID => '403', :MAIN_CRSE_NAME => 'GREEN_CURRY', :MAIN_CRSE_INGREDIENT_DESCPTN => 'GREEN CURRY PAST,MEAT OF YOUR CHOICES,
+                                                                                                      VETGETABLE, EGG PLANT,SALT,COCONUT MILK'},
+              {:MEAL_ID => '404', :MAIN_CRSE_NAME => 'YELLOW_CURRY', :MAIN_CRSE_INGREDIENT_DESCPTN => 'CURRY POWDER,CURRY PAST,MEATOF YOURCHOICES,
+                                                                                                         POTATOS,SALT, SUGER, COCONUT MILK'},
+              {:MEAL_ID => '405', :MAIN_CRSE_NAME => 'MUSAMAN_CURRY', :MAIN_CRSE_INGREDIENT_DESCPTN => 'CURRY PAST, MEAT OF YOUR CHOICES,ONION,
+                                                                                                          POTATO,REDCHILY,COCONUT  MILK'},
+              {:MEAL_ID => '406', :MAIN_CRSE_NAME => 'FRY_RICE', :MAIN_CRSE_INGREDIENT_DESCPTN => 'MEAT OF YOUR CHOICES,GREEN ONION,GREEN BEANS,
+                                                                                                    TOMATO,EGG'},
+              {:MEAL_ID => '407', :MAIN_CRSE_NAME => 'STIR_FRY_NOODLE' :MAIN_CRSE_INGREDIENT_DESCPTN => 'MEAT OF YOUR CHOICES, WHITE NOODLE,
+          ]                                                                                                SOY SOURCE, SUGAR, VETGETABLE'},                                                                                     
+                                                                                                            
+MAIN_COURSE.each do |MAIN_COURSE|
+  MAIN_COURSE.create!(MAIN_COURSE)
+end                                                                                                     
+                                                                                                     
+                                                                                                     
+                                                                                                     
+                                                                                                     
+                                                                                                     
+                                   ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
