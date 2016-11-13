@@ -1,0 +1,29 @@
+
+# db/seeds.rb 
+# Appetizer data
+# APPETIZER TABLE: APPETIZER NAME, INGREDIENT_DESCRIPTION
+
+APPETIZER = [{:MEAL_ID => '501', :APPTZR_NAME => 'GRILL_SATE', 
+                                 :APPTZR_INGREDIENT_DESCPTN => 'MEAT OF YOUR CHOICE, CURRY POWDER, SALT, SUGER,
+                                                                 COCONUT MILK,CHOPED NUT,CUCUMBER SALAD SIDE DISH'},
+            {:MEAL_ID => '502', :APPTZR_NAME => 'EGG_ROLE', :APPTZR_INGREDIENT_DESCPTN => 'MIXED VEGETABLE, NOODLE, YOUR CHOICES OF MEAT'},
+            {:MEAL_ID => '503', :APPTZR_NAME => 'PAPAYA_SALAD', :APPTZR_INGREDIENT_DESCPTN => 'GREEN PAPAYA, DRY_SHRIM, NUTS, SUGER, SULT,
+                                                                   LEMMON JUICE'},
+            {:MEAL_ID => '504',  :APPETZR_NAME => 'CURRY_PUFF', :APPTZR_INGREDIENT_DESCPTN => 'GROUND MEAT OF YOUR CHOICE, 
+                                                    CURRY POWDER, MIX WITH CHOPED YAM, ONION,  SALT, SUGAR, PEPPER, WRAPED 
+                                                    WITH ALL PURPOSE FLOWER, DEEP FRY'},
+            {:MEAL_ID => '505',  :APPETZR_NAME => 'TOMYUM_SOUP', :APPTZR_INGREDIENT_DESCPTN => 'MEAT OF YOUR CHOICE, LEMMON GRASS,
+                                                     KALANKA ROOT,LEMMON JOICE, MUSHROOM,SALT, OR FISH SOURCE'},
+            {:MEAL_ID => '506', :APPETZR_NAME => 'WANTON_SOUP', :APPTZR_INGREDIENT_DESCPTN => 'WONTON_SHEET STUFF WITH YOUR CHOICES OF MEAT,
+                                                    GREEN ONION'},
+        ]                                           
+                                                                
+APPETIZER.each do |APPETIZER|
+  APPETIZER.create!(APPETIZER)
+end                                 
+        
+
+
+
+ 
+ :CUSTOM_INGRDT_ID => '601','602','603','604','605','606','607','608','609','610'},
