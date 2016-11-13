@@ -1,0 +1,23 @@
+#Dessert = MEAL_ID,  Dessert_name, Dessert_description, 
+
+DESSERT = [{:MEAL_ID => '301', :DESSERT_NAME => 'CHOCOLATE_CAKE', :DESSERT_INGREDIENT_DESCPTN => 'CHOCOLATE, all purpose flower, nuts, butter'
+             :CARBS => '45', :GRM_250 => '$25', :GRM_500 => '$40', :GRM_1000 => '$75'},
+          {:MEAL_ID => '302', :DESSERT_NAME => 'BANANA_CAKE', :DESSERT_INGREDIENT_DESCPTN => 'BANANA, all purpose flour, nuts, sugar,butter',
+            :CARBS => '327', :GRM_250 => '$25', :GRM_500 => '$40', :GRM_1000 => '$75'},
+          {:MEAL_ID => '303', :DESSERT_NAME => 'PUMKIN_CUSTARD', :DESSERT_INGREDIENT_DESCPTN => 'PUMKIN, eeg, sugar, coconut milk',
+           ::CARBS => '45.7', :GRM_250 => '$45', :GRM_500 => '$50', :GRM_1000 => '$85'},
+          {:MEAL_ID => '304', :DESSERT_NAME => 'TONG_YOT', :DESSERT_INGREDIENT_DESCPTN => 'EGG YOLK Blanded with wheat, cooked in sugar syrup',
+           :CARBS => '57', :GRM_250 => '$35', :GRM_500 => '$50', :GRM_1000 => '$85'},
+          {:MEAL_ID => '45', :DESSERT_NAME => 'TONG_YIP', :DESSERT_INGREDIENT_DESCPTN => 'EGG YOLK Blanded with wheat, cooked in sugar syrup'
+           :CARBS => '57', :GRM_250 => '$35', :GRM_500 => '$50', :GRM_1000 => '$85'},
+          
+      ]
+
+DESSERT.each do |DESSERT|
+  DESERT.create!(DESERT)
+
+end
+
+		
+
+
