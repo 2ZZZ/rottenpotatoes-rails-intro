@@ -1,0 +1,48 @@
+#DessertController to link with route
+
+class DessertController < ApplicationController
+
+    def dessert_params
+    params.require(:dessert).permit(:MEAL_ID, :DESSERT_NAME, :DESSERT_INGREDIENT_DESCPTN, :CARBS :GRM_250 :GRM_500 :GRM_1000)
+  end
+
+  def show
+    id = params[:id] # retrieve dessert ID from URI route
+    @dessert = DESSERT.find(id) # look up MEAL_ID by unique ID
+    # will render app/views/dessert/show.<extension> by default
+  end
+
+  def index
+    @dessert = DESSERT.all
+  end
+
+  def new
+    # default: render 'new' template
+  end
+
+  def create
+    @dessert = DESSERT.create!(dessert_params)
+    flash[:notice] = "#{@dessert.DESSERT_NAME} was successfully created."
+    redirect_to movies_path
+  end
+
+  def edit
+    @dessert = DESSERT.find params[:id]
+  end
+
+  def update
+    @dessert = DESSERT.find params[:id]
+    @dessert.update_attributes!(dessert_params)
+    flash[:notice] = "#{@dessert.DESSERT_NAME} was successfully updated."
+    redirect_to dessert_path(@dessert)
+  end
+
+  def destroy
+    @dessert = DESSERT.find(params[:id])
+    @dessert.destroy
+    flash[:notice] = "DESSERT '#{@DESSERT.DESSERT_NAME}' deleted."
+    redirect_to dessert_path
+  end
+
+end
+end
