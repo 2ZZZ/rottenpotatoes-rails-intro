@@ -1,0 +1,4 @@
+#app/model/DESSERT base file
+
+class Dessert < ActiveRecord::Base
+end
